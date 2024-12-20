@@ -1,0 +1,36 @@
+.carta_testimonio {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #fef9c3;
+  width: 70rem;
+}
+
+.texto_testimonio {
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.autor_testimonio {
+  display: flex;
+  align-items: center;
+}
+
+.img_testimonio {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  margin-right: 1rem;
+}
+
+.autor_info {
+  display: flex;
+  flex-direction: column;
+}
+
+#testimonios_container {
+  display: flex;
+  padding: 5rem;
+  gap: 50px;
+}

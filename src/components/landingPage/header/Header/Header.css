@@ -1,0 +1,7 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: var(--rtc-padding-s);
+  height: 6rem;
+}
