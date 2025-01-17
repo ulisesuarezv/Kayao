@@ -6,16 +6,21 @@ import Testimonios from '../testimonios/Testimonios'
 import Text from '../text/Text'
 import Titulo2 from '../titulo2/titulo2'
 import './Hero.css'
+import { motion } from 'motion/react'
 
 const Hero = () => {
   return (
     <main>
       <section id='intro'>
         <Text />
-        <div id='button_container'>
+        <motion.div
+          id='button_container'
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <Button className='button_proyect'>Ver Proyectos</Button>
           <Button className='button_get_started'>Get Started</Button>
-        </div>
+        </motion.div>
       </section>
       <section id='especialidades'>
         <Titulo2>Especialidades</Titulo2>

@@ -5,3 +5,10 @@ header {
   padding: var(--rtc-padding-s);
   height: 6rem;
 }
+
+.nav_header_container {
+  height: 45%;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,15 @@
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(
+    circle,
+    rgb(92, 27, 27),
+    rgba(255, 255, 255, 0) 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000;
+}

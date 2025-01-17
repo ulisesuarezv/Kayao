@@ -23,6 +23,8 @@
 #button_container {
   display: flex;
   gap: 20px;
+  width: 20rem;
+  justify-content: center;
 }
 
 #especialidades {
