@@ -1,0 +1,14 @@
+.about_info_container {
+}
+
+.about_info_title_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.about_info_title {
+  font-weight: 400;
+  font-size: 80px;
+}

@@ -1,9 +1,23 @@
 import './Button.css'
 
-const Button = ({ className = '', children }) => {
+const Button = ({
+  className = '',
+  children,
+  h = 'auto',
+  w = 'auto',
+  type = 'button',
+  ...props
+}) => {
   return (
     <>
-      <button className={`button ${className}`}>{children}</button>
+      <button
+        className={`button ${className}`}
+        type={type}
+        style={{ width: w, height: h }}
+        {...props}
+      >
+        {children}
+      </button>
     </>
   )
 }

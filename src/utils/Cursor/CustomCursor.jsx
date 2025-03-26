@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import './CustomCursor.css'
 import { throttle } from 'lodash'
+// import animationJSON from '/src/public/animations/animation1.json'
+// import LottieRender from './LottieRender'
 
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 })
@@ -19,16 +21,23 @@ const CustomCursor = () => {
   return (
     <motion.div
       className='custom-cursor'
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        pointerEvents: 'none',
+        zIndex: 9999
+      }}
       animate={{
-        x: position.x - 15, // Ajuste para centrar el cursor
-        y: position.y - 15
+        x: position.x - 25, // Ajuste para centrar el cursor
+        y: position.y - 25
       }}
       transition={{
         type: 'spring',
         damping: 20,
         stiffness: 300
       }}
-    />
+    ></motion.div>
   )
 }
 

@@ -7,16 +7,19 @@ const NavBar = () => {
       <nav className='nav_container'>
         <ul className='nav_list'>
           <li className='nav_item'>
-            <NavLink className='nav_link'>Portfolio</NavLink>
+            <NavLink className='nav_link' to='/'>
+              Home
+            </NavLink>
           </li>
           <li className='nav_item'>
-            <NavLink className='nav_link'>Services</NavLink>
+            <NavLink className='nav_link' to='/services'>
+              Services
+            </NavLink>
           </li>
           <li className='nav_item'>
-            <NavLink className='nav_link'>About Us</NavLink>
-          </li>
-          <li className='nav_item'>
-            <NavLink className='nav_link'>Testimonials</NavLink>
+            <NavLink className='nav_link' to='/about'>
+              About Us
+            </NavLink>
           </li>
           <li className='nav_item'>
             <NavLink className='nav_link'>Contact</NavLink>

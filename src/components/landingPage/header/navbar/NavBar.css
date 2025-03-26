@@ -3,6 +3,9 @@
   flex-direction: row;
   width: 100%;
   justify-content: flex-end;
+  height: 4vw;
+  /* border: 1px solid #72744a; */
+  /* border-radius: 5px; */
 }
 
 .nav_list {
@@ -14,9 +17,10 @@
 
 .nav_link {
   color: var(--first-color--);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   transition: color 0.5s;
+  font-family: 'Poppins', serif !important;
 }
 
 .nav_link:hover {

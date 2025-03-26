@@ -1,3 +1,5 @@
+import CircleDesign from '../../../../utils/CircleDesign/CircleDesign'
+import HeroDesign from '../../../../utils/HeroDesign/HeroDesign'
 import { PORTFOLIO } from '../../../../utils/portfolio'
 import './Cliente.css'
 
@@ -6,6 +8,8 @@ const Cliente = () => {
     <>
       <h2>Nuestra Pasion</h2>
       <div id='cartas_container'>
+        <CircleDesign />
+        <HeroDesign />
         {PORTFOLIO.map((item, index) => (
           <>
             <div className='cartas'>

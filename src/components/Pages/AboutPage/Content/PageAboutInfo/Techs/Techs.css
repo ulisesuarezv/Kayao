@@ -1,0 +1,108 @@
+#example {
+  width: 100vw;
+  max-width: 50vw;
+  position: relative;
+  background-color: transparent;
+  top: 60px;
+}
+
+#example #progress {
+  position: absolute;
+  top: -75px;
+  left: -15px;
+  transform: rotate(-90deg);
+  background-color: transparent;
+}
+
+#example .bg {
+  /* stroke: var(--layer); */
+  stroke: #0b1011;
+}
+
+#example #progress circle {
+  stroke-dashoffset: 0;
+  stroke-width: 15%;
+  fill: none;
+}
+
+#progress .indicator {
+  /* stroke: var(--accent); */
+  stroke: var(--yellow-color);
+}
+
+#example .scroll-container {
+  display: flex;
+  list-style: none;
+  /* height: 220px; */
+  height: 30vh;
+  overflow-x: scroll;
+  padding: 20px 0;
+  flex: 0 0 600px;
+  margin: 0 auto;
+  gap: 30px;
+  background-color: transparent;
+}
+
+#example ::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+  background: #fff3;
+  border-radius: 1ex;
+}
+
+#example ::-webkit-scrollbar-thumb {
+  /* background: var(--accent); */
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 1ex;
+}
+
+#example ::-webkit-scrollbar-corner {
+  background: #fff3;
+}
+
+#example .tech-box {
+  flex: 0 0 200px;
+  /* background: var(--accent); */
+  /* background: #83e6f7; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.tech-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.tech-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  opacity: 0.7;
+}
+
+.tech-description {
+  opacity: 0;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  text-align: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+.tech-box:hover .tech-description {
+  opacity: 1;
+  visibility: visible;
+}

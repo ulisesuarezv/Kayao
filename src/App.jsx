@@ -1,15 +1,16 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Header from './components/landingPage/header/Header/Header'
 import Hero from './components/landingPage/main/hero/Hero'
-import CustomCursor from './utils/Cursor/CustomCursor'
+import AboutPage from './components/Pages/AboutPage/AboutPage'
+import Services from './components/Pages/Services/Services'
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <Hero />
-      <CustomCursor />
-    </>
+    <Routes>
+      <Route path='/' element={<Hero />} />
+      <Route path='/services' element={<Services />} />
+      <Route path='/about' element={<AboutPage />} />
+    </Routes>
   )
 }
 

@@ -1,0 +1,22 @@
+.pageAboutInfo {
+  height: 100vh;
+  background-color: var(--especialidades-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.techs-container {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.title-container-techs {
+  background-color: transparent;
+  width: 45vw;
+  position: absolute;
+  top: 30px;
+  left: 8rem;
+}

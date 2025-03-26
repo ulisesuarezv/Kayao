@@ -1,10 +1,12 @@
 .cartas {
   position: relative;
+  margin: 1rem;
   overflow: hidden;
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease-in-out;
+  height: fit-content;
 }
 
 .cartas:hover {
@@ -14,8 +16,13 @@
 #cartas_container {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 10rem;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  width: 100%;
 }
 
 .carta_imagen {
@@ -29,7 +36,7 @@
   inset: 0;
   background-image: linear-gradient(
     to top,
-    rgba(202, 138, 4, 0.9),
+    rgba(225, 230, 121, 0.6),
     transparent
   );
   opacity: 0;

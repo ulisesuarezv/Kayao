@@ -4,7 +4,7 @@ const Text = () => {
   return (
     <>
       <h1>Tu Proposito Digital</h1>
-      <p>
+      <p className='basic_text_class' style={{ background: 'transparent' }}>
         Desarrollamos brillantes paginas web a medida para que lleves tu
         proposito digital a otro nivel guiandote a los mejores resultados
       </p>

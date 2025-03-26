@@ -1,0 +1,38 @@
+#pageAbout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#animationAboutContainer {
+  height: 85%;
+  width: 85%;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+}
+
+.animated-title {
+  font-size: 5vw;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animated-title.fade {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.containers__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_about {
+  font-size: 1.6vw;
+  line-height: 1.7;
+}
